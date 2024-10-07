@@ -1,0 +1,162 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef; /* Slightly darker background for contrast */
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px; /* Increased padding for a more spacious feel */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+    padding: 15px 25px; /* Increased padding */
+    border-radius: 8px;
+    margin-bottom: 30px; /* Increased margin for more spacing */
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px 20px; /* Slightly larger padding */
+    margin: 0 8px; /* More consistent spacing */
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #495057;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px; /* Increased spacing for better readability */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #495057; /* Darker label color for better visibility */
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    padding: 12px; /* Increased padding for comfort */
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    transition: border-color 0.3s; /* Added transition for smoother focus effect */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    padding: 12px 20px; /* Increased padding */
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Added transform for hover effect */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px; /* Increased margin for better separation */
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    padding: 12px; /* Increased padding */
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase; /* Uppercase headers for emphasis */
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa; /* Light background for alternate rows */
+}
+
+/* Alerts */
+.alert {
+    padding: 15px; /* Increased padding for comfort */
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert.info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%; /* Full-width buttons on mobile */
+    }
+}

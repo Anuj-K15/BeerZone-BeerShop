@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Refill</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="view-sales.html" class="nav-item">View Sales</a>
+        <a href="record-sales.html" class="nav-item">Record Sale</a>
+        <a href="stock-info.html" class="nav-item">View Stock</a>
+    </nav>
+    <h1>Stock Refill</h1>
+    <form id="stockRefillForm">
+        <label for="brandInput">Brand:</label>
+        <select id="brand-select-refill" required>
+            <option value="">Select Brand</option>
+            <option value="1">Kingfisher</option>
+            <option value="2">Budweiser</option>
+            <option value="3">Tuborg Strong</option>
+            <!-- Add brands dynamically with JavaScript -->
+        </select>
+        
+        <label for="quantityInput">Quantity to Refill:</label>
+        <input type="number" id="quantityInput" required>
+        <button type="submit">Refill Stock</button>
+    </form>
+    <script src="stock-refill.js"></script>
+</body>
+
+</html>

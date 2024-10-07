@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beer Shop Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Beer Shop Management</h1>
+
+    <section>
+        <h2>Stock Refill</h2>
+        <form id="refill-form">
+            <label for="brand-select-refill">Select Brand:</label>
+            <select id="brand-select-refill">
+                <option value="1">Kingfisher</option><!-- Options will be populated here -->
+            </select>
+            <input type="number" id="quantity-refill" placeholder="Quantity" required>
+            <button type="submit">Refill Stock</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Record Sales</h2>
+        <form id="sales-form">
+            <label for="brand-select">Select Brand:</label>
+            <select id="brand-select">
+                <!-- Options will be populated here -->
+            </select>
+            <input type="number" id="quantity-sales" placeholder="Quantity" required>
+            <button type="submit">Record Sale</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Stock Information</h2>
+        <table id="stock-info">
+            <thead>
+                <tr>
+                    <th>Brand</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Sales Information</h2>
+        <table id="sales-info">
+            <thead>
+                <tr>
+                    <th>Brand</th>
+                    <th>Quantity</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Action</th> <!-- New column for actions -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows populated by JavaScript -->
+            </tbody>
+        </table>
+        
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

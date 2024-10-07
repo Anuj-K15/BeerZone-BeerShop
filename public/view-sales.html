@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Sales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="record-sales.html" class="nav-item">Record Sales</a>
+        <a href="stock-refill.html" class="nav-item">Stock Refill</a>
+        <a href="stock-info.html" class="nav-item">Stock Info</a>
+    </nav>
+
+    <div class="container">
+        <h2>Sales Data</h2>
+        <table id="salesTable">
+            <thead>
+                <tr>
+                    <th>Brand</th>
+                    <th>Quantity Sold</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sales data will be populated here via JS -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="view-sales.js"></script>
+</body>
+</html>
