@@ -7,11 +7,30 @@ const MONGODB_URI = 'mongodb+srv://anuj:ilushaurya@anujapi.my4e3.mongodb.net/?re
 
 const seedBrands = async () => {
     const brands = [
-        { brand: 'Kingfisher', quantity: 100 },
-        { brand: 'Budweiser', quantity: 100 },
-        { brand: 'Tuborg', quantity: 100 },
-        { brand: 'Heineken', quantity: 100 }
+        { brand: 'Budwiser Magnum 500ml', quantity: 0 },
+        { brand: 'Budwiser Magnum 650ml', quantity: 0 },
+        { brand: 'Budwiser Mild 650ml', quantity: 0 },
+        { brand: 'Calsberg Strong 500ml', quantity: 0 },
+        { brand: 'Calsberg Strong 650ml', quantity: 0 },
+        { brand: 'Heineken Silver 650ml', quantity: 0 },
+        { brand: 'Haywards 2000 Strong 650ml', quantity: 0 },
+        { brand: 'Kingfisher Mild 500ml', quantity: 0 },
+        { brand: 'Kingfisher Mild 650ml', quantity: 0 },
+        { brand: 'Kingfisher Strong 500ml', quantity: 0 },
+        { brand: 'Kingfisher Strong 650ml', quantity: 0 },
+        { brand: 'Kingfisher Ultra Max 650ml', quantity: 0 },
+        { brand: 'London Pilsner Mild 500ml', quantity: 0 },
+        { brand: 'London Pilsner Strong 650ml', quantity: 0 },
+        { brand: 'Port Wine 1000 330ml', quantity: 0 },
+        { brand: 'Rio Breezer Cranberry 330ml', quantity: 0 },
+        { brand: 'Rio Breezer Lemon 330ml', quantity: 0 },
+        { brand: 'Rio Breezer Orange 330ml', quantity: 0 },
+        { brand: 'Royal Challenge Strong 650ml', quantity: 0 },
+        { brand: 'Tuborg Strong 330ml', quantity: 0 },
+        { brand: 'Tuborg Strong 500ml', quantity: 0 },
+        { brand: 'Tuborg Strong 650ml', quantity: 0 }
     ];
+    
 
     try {
         await mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
