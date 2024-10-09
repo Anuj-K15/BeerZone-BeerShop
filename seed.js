@@ -10,6 +10,7 @@ const seedBrands = async () => {
         { brand: 'Budwiser Magnum 500ml', quantity: 0 },
         { brand: 'Budwiser Magnum 650ml', quantity: 0 },
         { brand: 'Budwiser Mild 650ml', quantity: 0 },
+        { brand: 'Budwiser Mild 500ml', quantity: 0 },
         { brand: 'Calsberg Strong 500ml', quantity: 0 },
         { brand: 'Calsberg Strong 650ml', quantity: 0 },
         { brand: 'Heineken Silver 650ml', quantity: 0 },
@@ -28,7 +29,8 @@ const seedBrands = async () => {
         { brand: 'Royal Challenge Strong 650ml', quantity: 0 },
         { brand: 'Tuborg Strong 330ml', quantity: 0 },
         { brand: 'Tuborg Strong 500ml', quantity: 0 },
-        { brand: 'Tuborg Strong 650ml', quantity: 0 }
+        { brand: 'Tuborg Strong 650ml', quantity: 0 },
+        { brand: 'Water', quantity: 0 },
     ];
     
 
